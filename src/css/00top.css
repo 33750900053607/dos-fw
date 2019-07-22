@@ -1,0 +1,674 @@
+@charset "utf-8";
+
+#container{
+    width:100%;
+    overflow:hidden;
+    clear:both;
+}
+
+#contentsheader{
+    width:100%;
+    min-height:100px;
+    background-image:url(../img/bg01.png);
+    background-size:100% 100%;
+    background-position:center top;
+    background-repeat:no-repeat;
+    clear:both;
+    overflow:hidden;
+}
+
+#contentsheader nav{
+    margin:0 auto;
+}
+
+.imi_headimg{
+    background-image:url(../img/bg02.png);
+    background-size:54px 24px;
+    background-position:center top;
+    background-repeat:no-repeat;
+}
+
+.imi_inlinebx{
+    display: inline-block;
+    width:49%;
+    margin:0 auto;
+    vertical-align:middle;
+}
+
+.imi_inlinebx > img{
+    max-width:100%;
+    height:auto;
+}
+
+.imi_tcbx{
+    display: table-cell;
+    vertical-align:middle;
+}
+
+#contentsheader h2{
+    min-width:280px;
+    margin:0;
+    padding:0;
+    font-size:1.25em;
+    color:#fff;
+    font-weight:bold;
+}
+
+#contentsheader h2 > img{
+    display:inline;
+    vertical-align:middle;
+    margin-right:1em;
+}
+
+#contentsheader .imi_tcbx > ul{
+    position:relative;
+    margin: 0 auto;
+    padding-left:36px;
+}
+
+#contentsheader .imi_tcbx > ul > li{
+    position:relative;
+    display:inline-block;
+    margin-left:56px;
+    text-align:center;
+    vertical-align:baseline;
+}
+
+#contentsheader .imi_tcbx > ul > li:before{
+    content:url(../img/ls01.png);
+    position: absolute;
+    top: 50%;
+    left:-40px;
+    margin-top:-12px;
+}
+
+#contentsheader .imi_tcbx > ul > li:last-child:after{
+    content:url(../img/ls01.png);
+    position: absolute;
+    top: 50%;
+    right:-40px;
+    margin-top:-12px;
+}
+
+#contentsheader a{
+    display:block;
+    text-align:center;
+    font-size:1.0em;
+    color:#000;
+    text-decoration:none;
+}
+
+#contentsheader a:hover{
+    color:#fff;
+}
+
+.area{
+    width:80%;
+    max-width:960px;
+    margin:0 auto;
+}
+
+.area > h3{
+    margin:3em auto 2em;
+    text-align:center;    
+}
+
+.area > h3 > p{
+    position:relative;
+    display:inline;
+    font-size:22px ;
+    color:#50B16C;
+    font-weight:bold;
+}
+
+.area > h3 > p:before{
+    content:url(../img/ls02.png);
+    position: absolute;
+    top: 50%;
+    left:-40px;
+    margin-top:-18px;
+}
+
+.area > h3 > p:after{
+    content:url(../img/ls02.png);
+    position: absolute;
+    top: 50%;
+    right:-40px;
+    margin-top:-18px;
+}
+
+div[id^="sec"] > p, div[id^="sec"] > div > p{
+    margin-bottom:40px;
+    padding:0.6em;
+    font-size:0.875em;
+    line-height:1.8em;
+    text-align:left;
+}
+
+div[id^="sec"] ul{
+    margin-left:40px;
+}
+
+
+div[id^="sec"] h4{
+    font-size:1.25em;
+    margin:0 0 0.2em 1.2em;;
+    
+}
+
+.imi_box{
+    width:100%;
+    background-color:#FBF9F2;
+    border:solid 3px #D6D6D6;
+}
+
+.imi_box .imi_typetxt{
+    max-width:320px;
+    margin-top: 16px;
+}
+
+.imi_box h4{
+    font-size:1.2em;
+    margin-bottom:0.2em;
+    
+}
+
+/*-- boxの共通部分 --*/
+
+
+div[id^="imi_typebox_"]{
+    width:98%;
+    max-width:900px;
+    margin:32px auto 16px;
+    padding:40px 0 24px;
+}
+
+div[id^="imi_typebox_"] .imi_inlinebx:first-child{
+    width:38%;
+    max-width:340px;
+}
+div[id^="imi_typebox_"] .imi_inlinebx:last-child{
+    width:60%;
+}
+
+div[id^="imi_typebox_"] li{
+    text-align:left;
+    list-style-position:outside;
+    font-size:0.875em;
+    margin-bottom:0.2em;
+}
+
+/*--　boxの固有部分 */
+
+#imi_typebox_g{
+    border-top:#459A5F 4px solid;
+}
+
+#imi_typebox_g li{
+    list-style-image:url(../img/ls03gr.png);
+}
+
+#imi_typebox_r{
+    border-top:#CA3A2F 4px solid;
+}
+
+#imi_typebox_r li{
+    list-style-image:url(../img/ls03rd.png);
+}
+#imi_typebox_b{
+    border-top:#2D80CB 4px solid;
+}
+
+#imi_typebox_b li{
+    list-style-image:url(../img/ls03bl.png);
+}
+
+#sec03 > p{
+    margin-bottom:40px;
+}
+
+.imi_imghd01{
+    display:block;
+    width:150px;
+    height:25px;
+    margin:-14px auto 0;     
+}
+
+#sec03 ul{
+    width:100%;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+#sec03 .imi_box ul li{
+    display:inline-block;
+    width:30%;
+    margin:16px 1%;
+    vertical-align:top;
+}
+
+#sec03 .imi_box ul li > img{
+    width:100%;
+    height:auto;
+}
+
+
+#sec03 ul li h4{
+    margin:8px;
+    font-weight:bold;
+}
+
+/*-- table部分 --*/
+
+table{
+    width:100%;
+    margin:40px 0 20px;
+    padding:0;
+    background-image:url(../img/hr01.png);
+    background-repeat:no-repeat;
+    background-position:center 52px;
+    background-size:100% 4px;
+}
+
+th{
+    height:52px;
+    vertical-align: middle;
+    background-color:#fff;
+}
+
+th img{
+    height:40px;
+    width:auto;
+}
+
+td{
+    width:29%;
+    padding:0.6em 0.4em;
+    color:#000;
+    border-bottom:#d6d6d6 solid 2px;
+    font-size:0.875em;
+    text-align:left;
+    vertical-align:middle;
+}
+
+tr:nth-child(odd){
+    background-color:#FBF9F2;
+}
+
+
+td.line_g{
+    width:10%;
+    color:#50B16D;
+    border-bottom:#50B16D solid 2px;
+    font-weight:bold;
+    font-size:1.25em;
+    line-height:1.0em;
+    text-align:center;
+    vertical-align:middle;
+}
+
+#sec03 td label{
+    display:table;
+}
+
+#sec03 td input{
+    display:table-cell;
+    height:4em;
+    padding-right:4px;
+    vertical-align:middle;
+}
+
+#sec03 td p{
+    display:table-cell;
+    height:4em;
+    vertical-align:middle;
+}
+
+#sec03 table span{
+    display:inline-block;
+}
+
+
+td label p{
+    display:inline-block;
+    margin-left:0.2em;
+    vertical-align:middle;
+}
+
+/*-- form --*/
+
+button{
+    display:block;
+    margin:16px auto;
+    background:none;
+    border:none;
+}
+
+button img{
+    width:100%;
+    height:auto;
+}
+
+button:hover{
+    opacity:0.7;
+}
+
+button:active{
+    -webkit-box-shadow:inset 0px 0px 8px #984D26;
+    -moz-box-shadow:inset 0px 0px 2px #984D26;
+    box-shadow:inset 0px 0px 2px #984D26;
+    border:none;
+}
+
+/*-- 結果表示 --*/
+
+#imi_result{
+    display:none;
+    text-align:center;
+    font-size:1rem;
+    margin:0 0 80px;
+    padding:0;
+}
+
+#imi_result > img{
+    width:100%;
+    height:auto;
+    margin:0;
+}
+
+#imi_result > img:first-child{
+    width:200px;
+}
+
+#imi_result > ul li{
+    display:inline-block;
+    width:30%;
+    margin:0 1%;
+}
+
+#imi_result p{
+    text-align:center;
+}
+
+#result_g{
+    width:100%;
+    padding:0.6em;
+    background-color:#459A5F;
+    border:solid 1px #316C43;
+    color:#fff;
+    font-weight:bold;
+    font-size:1.6em;
+    text-align:center;
+}
+
+#result_r{
+    width:100%;
+    padding:0.6em;
+    background-color:#CA3A2F;
+    border:solid 1px #992D24;
+    color:#fff;
+    font-weight:bold;
+    font-size:1.6em;
+    text-align:center;
+}
+
+#result_b{
+    width:100%;
+    padding:0.6em;
+    background-color:#2E81CB;
+    border:solid 1px #225F95;
+    color:#fff;
+    font-weight:bold;
+    font-size:1.6em;
+    text-align:center;
+}
+
+#resulttxt{
+    margin-top:1em;
+    margin-bottom:0 !important;
+    font-size:1.5rem;
+    font-weight:bold;
+    line-height:1rem !important;
+}
+
+
+/*-- 問い合せボックス --*/
+
+#imi_callme{
+    padding:1em;
+    text-align:center;
+}
+
+#imi_callme > p{
+    width:80%;
+    margin:8px auto;
+    text-align:center;
+}
+
+#imi_callme > a > img{
+    width:40%;
+    max-width:340px;
+    min-width:260px;
+    height:auto;
+    margin:0;
+}
+
+#imi_callme > div >.imi_inlinebx{
+    display:inline-block;
+    width:40%;
+    height:52px;
+    margin:20px 16px 20px;
+    color:#61B179;
+    background-color:#fff;
+    font-size:26px;
+    text-align:center;
+    vertical-align:middle;
+    border:solid 3px #62B17A;
+}
+
+
+#imi_callme .imi_inlinebx > p img{
+    vertical-align:middle;
+}
+
+#imi_callme .imi_inlinebx > p{
+    width:100%;
+    margin:0 auto;
+    padding:0.2rem 0 0 10%;
+    color:#61B179;
+    background-image:url(../img/icon09.png);
+    background-repeat:no-repeat;
+    background-position:12% center;
+}
+
+#imi_callme .imi_inlinebx > a{
+    display:block;
+    width:100%;
+    height:48px;
+    padding:0.6rem 0 0 32%;
+    color:#61B179;
+    background-image:url(../img/icon10.png);
+    background-repeat:no-repeat;
+    background-position:12% center;
+    font-size:18px;
+    text-align:left;
+    vertical-align:middle;
+    text-decoration:none;
+}
+
+#imi_callme .imi_inlinebx > a:hover{
+    color:#fff;
+    background-color:#61B179;
+    background-image:url(../img/icon10a.png);
+}
+
+
+#imi_callme .imi_inlinebx img{
+    margin-right:1em;
+}
+
+/*文字装飾関連*/
+
+.txt_ss{
+    font-size:0.75em;
+}
+
+.txt_s{
+    font-size:0.875em;
+}
+
+.txt_l{
+    font-size:1.25em;
+}
+
+.txt_bld{
+    font-weight:bold;
+}
+
+.txt_sup{
+    vertical-align:super;
+}
+
+.txt_red{
+    color:#CA392D;
+}
+
+.txt_grn{
+    color:#459A5F;
+}
+
+.txt_bl1{
+    color:#2E81CB;
+}
+
+.txt_bl2{
+    color:#24649D;
+}
+
+/*20180412*/
+.imi_itembox{
+  margin-bottom: 40px;
+  text-align: center;
+}
+.imi_itembox img{vertical-align: middle;}
+.imi_itembox p{
+  display: inline-block;
+  width: 360px;
+  vertical-align: middle;
+  text-align: left;
+  font-size: 1.375rem;
+  font-weight: bold;
+  color: #50B16C;
+}
+
+@media screen and (max-width:639px){
+    
+.area{
+    width:96%;
+    margin:0 auto;
+}
+
+.imi_inlinebx{
+    display:block !important; 
+    width:96% !important;
+    margin:0 auto !important;
+    padding:0 !important;
+    text-align:center;
+}
+
+.imi_inlinebx > img{
+    width:100%;
+    height:auto;
+    margin:0;
+}
+
+.imi_tcbx{
+    display:block;
+    width:96%;
+    margin:0 auto;
+    padding:0;
+    text-align:center;
+}
+
+
+#contentsheader .imi_tcbx > ul > li{
+    width:96%;
+    margin:8px auto;
+}
+
+#contentsheader .imi_tcbx > ul > li:before{
+    content:"";
+}
+
+
+#contentsheader .imi_tcbx > ul > li:last-child:after{
+    content:"";
+}
+
+.imi_typetxt{
+    width:98%;
+    margin:16px auto;
+}
+
+#sec03 .imi_box h4{
+    font-size:0.82em;
+}
+
+#sec03 .imi_box li{
+    display:block;
+    width:96%;
+    margin:8px auto;
+}
+
+#sec03 table{
+    width:96%;
+    margin:0 auto;
+    font-size:0.72em;
+    overflow:hidden;
+}
+
+#sec03 table td{
+    text-align:left;
+}
+
+#sec03 table img{
+    width:100%;
+    height:auto;
+}
+
+td input{
+    display:inline;
+    margin:0;
+    padding:0;
+}
+
+td label p{
+    display:inline;
+}
+
+#imi_result li img{
+    width:90%;
+    height:auto;
+}
+
+.imi_box li > img{
+    width:100%;
+}
+ 
+ #imi_callme > div >.imi_inlinebx{
+     display:block;
+     width:100%;
+     margin:16px 0;
+ }
+ 
+ button:hover{
+     opacity:1.0;
+ }
+
+  .imi_itembox p{
+  width: auto;
+    padding: 0 20px;
+}
+
+}

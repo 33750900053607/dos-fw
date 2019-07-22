@@ -1,0 +1,31 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-keyboard": {
+      "PACKAGE_NAME": "framework7.dosha"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "framework7.dosha"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "framework7.dosha"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "framework7.dosha"
+    },
+    "cordova-plugin-wkwebview-file-xhr": {
+      "PACKAGE_NAME": "framework7.dosha"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-wkwebview-engine": {
+      "PACKAGE_NAME": "framework7.dosha"
+    }
+  }
+}

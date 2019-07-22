@@ -1,0 +1,72 @@
+{
+  "_from": "cordova-plugin-wkwebview-engine",
+  "_id": "cordova-plugin-wkwebview-engine@1.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-DSjPNbedXJmhGfCdQjbKIhxcs0ONhip99t4xp3V880lZo53cAFzRGQJz4serhKUF8BmD0E3HyzfUlaVN74lBaw==",
+  "_location": "/cordova-plugin-wkwebview-engine",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-wkwebview-engine",
+    "name": "cordova-plugin-wkwebview-engine",
+    "escapedName": "cordova-plugin-wkwebview-engine",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-wkwebview-engine/-/cordova-plugin-wkwebview-engine-1.2.0.tgz",
+  "_shasum": "950431aab5354f4d56b832e01dfc1979c0fa6816",
+  "_spec": "cordova-plugin-wkwebview-engine",
+  "_where": "/Users/smorita/work/ff7/dos-fw/cordova",
+  "author": {
+    "name": "Apache Software Foundation"
+  },
+  "bugs": {
+    "url": "https://github.com/apache/cordova-plugin-wkwebview-engine/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "The official Apache Cordova WKWebView Engine Plugin",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-semistandard": "^11.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "engines": {
+    "cordovaDependencies": {
+      "2.0.0": {
+        "cordova": ">100"
+      }
+    }
+  },
+  "homepage": "https://github.com/apache/cordova-plugin-wkwebview-engine#readme",
+  "keywords": [
+    "cordova",
+    "wkwebview",
+    "cordova-ios",
+    "ecosystem:cordova"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "name": "cordova-plugin-wkwebview-engine",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apache/cordova-plugin-wkwebview-engine.git"
+  },
+  "scripts": {
+    "eslint": "eslint src",
+    "objc-tests": "cd tests/ios && npm test",
+    "preobjc-tests": "cd tests/ios && npm install",
+    "test": "npm run eslint && npm run objc-tests"
+  },
+  "version": "1.2.0"
+}
