@@ -62,9 +62,10 @@ td.line_g{
 div.bline{
   width:10%;
   color:#506DB1;
+  border: 1px solid #ffffff;
   border-bottom:#506DB1 solid 2px;
   font-weight:bold;
-  font-size:1.25em;
+  font-size:2.0em;
   line-height:1.0em;
   text-align:center;
   vertical-align:middle;
