@@ -48,6 +48,7 @@ tr:nth-child(odd){
 }
 
 
+
 td.line_g{
   width:10%;
   color:#50B16D;
@@ -58,12 +59,32 @@ td.line_g{
   text-align:center;
   vertical-align:middle;
 }
+div.bline{
+  width:10%;
+  color:#506DB1;
+  border-bottom:#506DB1 solid 2px;
+  font-weight:bold;
+  font-size:1.25em;
+  line-height:1.0em;
+  text-align:center;
+  vertical-align:middle;
+}
 
 #sec03 td label{
   display:table;
 }
+#sec03 div label{
+  display:table;
+}
+
 
 #sec03 td input{
+  display:table-cell;
+  height:4em;
+  padding-right:4px;
+  vertical-align:middle;
+}
+#sec03 div input{
   display:table-cell;
   height:4em;
   padding-right:4px;
@@ -75,14 +96,46 @@ td.line_g{
   height:4em;
   vertical-align:middle;
 }
+#sec03 div p{
+  display:table-cell;
+  height:4em;
+  vertical-align:middle;
+}
 
 #sec03 table span{
   display:inline-block;
 }
 
+#sec03 table{
+  width:96%;
+  margin:0 auto;
+  font-size:0.72em;
+  overflow:hidden;
+}
+#sec03 .dostab{
+  width:96%;
+  margin:0 auto;
+  font-size:0.72em;
+  overflow:hidden;
+}
+
+#sec03 table td{
+  text-align:left;
+}
+#sec03 .dostab div{
+  text-align:left;
+}
 
 td label p{
   display:inline-block;
   margin-left:0.2em;
   vertical-align:middle;
 }
+div label p{
+  display:inline-block;
+  margin-left:0.2em;
+  vertical-align:middle;
+}
+
+
+
