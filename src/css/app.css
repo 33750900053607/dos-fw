@@ -11,7 +11,7 @@ div[class*="col"] {
   border: 1px solid #ddd;
   padding: 5px;
   margin-bottom: 15px;
-  font-size: 12px;
+  font-size: 1.3em;
 }
 
 td input{
