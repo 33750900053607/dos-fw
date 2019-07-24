@@ -102,6 +102,8 @@ $$("#typecheck").click(function(){
   var wktyperes = "2";
   var wkmax = 0;
   var i = 0;
+//  alert(wktypename);
+
   for(i=0;i<30;i++ ){
       if(document.forms[0].elements[i].checked === true){
           wktypecnt = wktypecnt + 1;
@@ -156,7 +158,7 @@ $$("#typecheck").click(function(){
   //診断結果を表示
  
   alert("あなたのドーシャ(体質)は"+wkresult+"です。\n"+"ヴァータ："+wktype[0]+"、ピッタ："+wktype[1]+"、カパ："+wktype[2]);
-  alert("ヴァータ："+wktype[0]+"、ピッタ："+wktype[1]+"、カパ："+wktype[2]);      
+  // alert("ヴァータ："+wktype[0]+"、ピッタ："+wktype[1]+"、カパ："+wktype[2]);      
   // $$("#imi_result"). animate( { height: 'show' }, 'slow' );
 
 

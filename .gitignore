@@ -1,6 +1,6 @@
 #Backups
 *.bak
-*のコピー.*
+*のコピー*
 
 # Logs
 logs
