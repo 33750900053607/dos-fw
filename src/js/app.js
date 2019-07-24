@@ -157,7 +157,7 @@ $$("#typecheck").click(function(){
   
   //診断結果を表示
  
-  alert("あなたのドーシャ(体質)は"+wkresult+"です。\n"+"ヴァータ："+wktype[0]+"、ピッタ："+wktype[1]+"、カパ："+wktype[2]);
+  alert("あなたのドーシャ(体質)は"+wkresult+"です。\n"+"ヴァータ(風)："+wktype[0]+"、ピッタ(火)："+wktype[1]+"、カパ(水)："+wktype[2]);
   // alert("ヴァータ："+wktype[0]+"、ピッタ："+wktype[1]+"、カパ："+wktype[2]);      
   // $$("#imi_result"). animate( { height: 'show' }, 'slow' );
 
@@ -165,7 +165,7 @@ $$("#typecheck").click(function(){
   //2015.11.09 amitani 追加 ----------------------------------------------
   wktypename = ['<span class="txt_grn">ヴァータ</span>'
               , '<span class="txt_red">ピッタ</span>'
-              , '<span class="txt_bl1">カファ</span>'];
+              , '<span class="txt_bl1">カパ</span>'];
   var wktypeSub = [];
   for(i = 0;i<=2;i++){wktypeSub[i] = wktype[i];}
   wktypeSub.sort(function(a,b){return b - a;});
