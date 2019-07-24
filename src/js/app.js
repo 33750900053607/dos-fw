@@ -93,6 +93,7 @@ $$('#my-login-screen .login-button').on('click', function () {
   app.dialog.alert('Username: ' + username + '<br>Password: ' + password);
 });
 
+// $$(window).load(function (){
 $$("#typecheck").click(function(){
   var wktype = [0,0,0];
   var wktypename = ["ヴァータ","ピッタ","カファ"];
@@ -124,7 +125,7 @@ $$("#typecheck").click(function(){
       alert("全ての項目にチェックをしてください。");
       return false;
   }
-  alert("test");  
+  // alert("test");  
   //診断
   wkmax = Math.max.apply(null, wktype);
   var maxindex = wktype.indexOf(wkmax);
@@ -154,8 +155,9 @@ $$("#typecheck").click(function(){
   
   //診断結果を表示
  
-  alert(wkresult);     
-  $("#imi_result"). animate( { height: 'show' }, 'slow' );
+  alert("あなたのドーシャ(体質)は"+wkresult+"です。\n"+"ヴァータ："+wktype[0]+"、ピッタ："+wktype[1]+"、カパ："+wktype[2]);
+  alert("ヴァータ："+wktype[0]+"、ピッタ："+wktype[1]+"、カパ："+wktype[2]);      
+  // $$("#imi_result"). animate( { height: 'show' }, 'slow' );
 
 
   //2015.11.09 amitani 追加 ----------------------------------------------
@@ -202,10 +204,12 @@ $$("#typecheck").click(function(){
 
 //    $("#resulttxt").text(wktyperes + "-ドーシャタイプ");
 //    $("#resulttxt").text(wkresult + "タイプ");
-  $("#resulttxt").html(wkresult + "タイプ");
-  $("#result_g").text(wktype[0]);
-  $("#result_r").text(wktype[1]);
-  $("#result_b").text(wktype[2]);
-  alert(wktype); 
+  $$("#resulttxt").html(wkresult + "タイプ");
+  $$("#result_g").text(wktype[0]);
+  $$("#result_r").text(wktype[1]);
+  $$("#result_b").text(wktype[2]);
+  // alert(wktype); 
+  // alert(wkresult); 
   return false; 
   });
+// });
