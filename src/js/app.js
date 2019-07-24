@@ -96,7 +96,7 @@ $$('#my-login-screen .login-button').on('click', function () {
 // $$(window).load(function (){
 $$("#typecheck").click(function(){
   var wktype = [0,0,0];
-  var wktypename = ["ヴァータ","ピッタ","カファ"];
+  var wktypename = ["ヴァータ","ピッタ","カパ"];
   var wkresult = "";
   var wktypecnt = 0;
   var wktyperes = "2";
@@ -192,7 +192,7 @@ $$("#typecheck").click(function(){
       var liTag = [];
       liTag[0] = '<li><img src="img/icon05.png" alt="ヴァータ"/><p id="result_g">0</p></li>';
       liTag[1] = '<li><img src="img/icon06.png" alt="ピッタ"/><p id="result_r">0</p></li>';
-      liTag[2] = '<li><img src="img/icon07.png" alt="カファ"/><p id="result_b">0</p></li>';
+      liTag[2] = '<li><img src="img/icon07.png" alt="カパ"/><p id="result_b">0</p></li>';
       var str = '';
       for(i = 0;i<=2;i++){
           if(wktype[0] == wktypeSub[i]){str = str + liTag[0];liTag[0] = '';}
