@@ -4,15 +4,15 @@
 }
 
 /* Your app custom styles here */
-div[class*="col"] {
-  background: #fff;
+/* div[class*="col-"] {
+  background: #0ff;
   text-align: center;
   color: #000;
   border: 1px solid #ddd;
   padding: 5px;
   margin-bottom: 15px;
   font-size: 1.3em;
-}
+} */
 
 td input{
   display:inline;
@@ -75,6 +75,36 @@ div.bline{
   text-align:center;
   vertical-align:middle;
 }
+div.vata{
+  width:10%;
+  background: #ffffcc;
+  text-align: center;
+  color: #000;
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+} 
+div.pitta{
+  width:10%;
+  background: #ffdddd;
+  text-align: center;
+  color: #000;
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+} 
+div.kapha{
+  width:10%;
+  background: #b1ddff;
+  text-align: center;
+  color: #000;
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+} 
 
 #sec03 td label{
   display:table;
