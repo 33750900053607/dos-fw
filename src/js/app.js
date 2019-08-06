@@ -131,6 +131,8 @@ $$("#typecheck").click(function(){
   //診断
   wkmax = Math.max.apply(null, wktype);
   var maxindex = wktype.indexOf(wkmax);
+
+//  alert("maxindex:"+maxindex);
   
    if (wkmax > 6) { //どっかが7以上ある＝どうなっても二位の二倍以上
       wktyperes = "1";
@@ -147,25 +149,37 @@ $$("#typecheck").click(function(){
            wkresult = wktypename.join("-");
        }
       //elseの場合初期値でOK
-  }  //これ以外は初期値でOK
+  }  else { //これ以外は初期値でOK
+    wktyperes = "2";
+    wktypename[wktype.indexOf(Math.min.apply(null, wktype))] = "";
+//    wktypename = $.grep(wktypename, function(n){return n !== "";});
+    wkresult = wktypename.join("-");
+  }  
+
+//  alert("wktyperes:"+wktyperes+"/ wkresult:"+wkresult);
   
-  if(wktyperes === "2"){ //初期値のときの処理
-      wktypename[wktype.indexOf(Math.min.apply(null, wktype))] = "";
-      wktypename = $.grep(wktypename, function(n){return n !== "";});
-      wkresult = wktypename.join("-");
-  }
+//  if(wktyperes === "2"){ //初期値のときの処理
+//      wktypename[wktype.indexOf(Math.min.apply(null, wktype))] = "";
+//      wktypename = $.grep(wktypename, function(n){return n !== "";});
+//      wkresult = wktypename.join("-");
+//  }
   
   //診断結果を表示
  
-  alert("あなたのドーシャ(体質)は"+wkresult+"です。\n"+"ヴァータ(風)："+wktype[0]+"、ピッタ(火)："+wktype[1]+"、カパ(水)："+wktype[2]);
+  // alert("あなたのドーシャ(体質)は"+wkresult+"です。\n"+"ヴァータ(風)："+wktype[0]+"、ピッタ(火)："+wktype[1]+"、カパ(水)："+wktype[2]);
   // alert("ヴァータ："+wktype[0]+"、ピッタ："+wktype[1]+"、カパ："+wktype[2]);      
   // $$("#imi_result"). animate( { height: 'show' }, 'slow' );
 
 
   //2015.11.09 amitani 追加 ----------------------------------------------
-  wktypename = ['<span class="txt_grn">ヴァータ</span>'
-              , '<span class="txt_red">ピッタ</span>'
-              , '<span class="txt_bl1">カパ</span>'];
+//  wktypename = ['<span class="txt_grn">ヴァータ</span>'
+//              , '<span class="txt_red">ピッタ</span>'
+//              , '<span class="txt_bl1">カパ</span>'];
+
+  wktypename = ['ヴァータ'
+              , 'ピッタ'
+              , 'カパ'];
+              
   var wktypeSub = [];
   for(i = 0;i<=2;i++){wktypeSub[i] = wktype[i];}
   wktypeSub.sort(function(a,b){return b - a;});
@@ -184,6 +198,14 @@ $$("#typecheck").click(function(){
   if(wktyperes === "1"){str.pop();str.pop();}
   if(wktyperes === "2"){str.pop();}
   wkresult = str.join('-');
+
+  // alert(wkresult);
+
+  //診断結果を表示
+ 
+  alert("あなたのドーシャ(体質)は"+wkresult+"です。\n"+"ヴァータ(風)："+wktype[0]+"、ピッタ(火)："+wktype[1]+"、カパ(水)："+wktype[2]);
+  // alert("ヴァータ："+wktype[0]+"、ピッタ："+wktype[1]+"、カパ："+wktype[2]);      
+  // $$("#imi_result"). animate( { height: 'show' }, 'slow' );  
 
   /* 票数の順番も変える場合は、こちら
       var wktypeSub = [];
@@ -207,11 +229,13 @@ $$("#typecheck").click(function(){
 //    $("#resulttxt").text(wktyperes + "-ドーシャタイプ");
 //    $("#resulttxt").text(wkresult + "タイプ");
 //  $$("#resulttxt").html(wkresult + "タイプ");
-  $$("#result_g").text('99');
-  $$("#result_r").text(wktype[1]);
-  $$("#result_b").text(wktype[2]);
+  $("#result_g").text(wktype[0]);
+  $("#result_r").text(wktype[1]);
+  $("#result_b").text(wktype[2]);
+
+   document.getElementById('result_g').textContent = "99";
   // alert(wktype); 
   // alert(wkresult); 
   return false; 
   });
-// });
+ // });
