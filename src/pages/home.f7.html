@@ -3,12 +3,14 @@
     <!-- Top Navbar -->
     <div class="navbar">
       <div class="navbar-inner">
+        <!--
         <div class="left">
           <a href="#" class="link icon-only panel-open" data-panel="left">
             <i class="icon f7-icons if-not-md">menu</i>
             <i class="icon material-icons if-md">menu</i>
           </a>
         </div>
+      -->
         <div class="title sliding">Ayurveda</div>
         <div class="right">
           <a href="#" class="link icon-only panel-open" data-panel="right">
@@ -67,9 +69,9 @@
         </div>
         <div class="row no-gap">
           <div class="col-100 tablet-10 bline">爪</div>
-          <div class="col-100 tablet-30 vata"><label><input type="radio" name="type_q2" value="v" id="type_q2_0"><p>軽い<br>白っぽい、割れやすい</p></label></div>
-          <div class="col-100 tablet-30 pitta"><label><input type="radio" name="type_q2" value="p" id="type_q2_1"><p>平均的<br>赤みがある、整っている</p></label></div>
-          <div class="col-100 tablet-30 kapha"><label><input type="radio" name="type_q2" value="k" id="type_q2_2"><p>重い<br>丈夫である、大きい</p></label></div>
+          <div class="col-100 tablet-30 vata"><label><input type="radio" name="type_q2" value="v" id="type_q2_0"><p>白っぽい、割れやすい</p></label></div>
+          <div class="col-100 tablet-30 pitta"><label><input type="radio" name="type_q2" value="p" id="type_q2_1"><p>赤みがある、整っている</p></label></div>
+          <div class="col-100 tablet-30 kapha"><label><input type="radio" name="type_q2" value="k" id="type_q2_2"><p>丈夫である、大きい</p></label></div>
         </div>
 
         <div class="row no-gap">
@@ -127,7 +129,19 @@
 -->
   </form>
 </div>
+<div id="imi_result" style="">
 
+  <p class="txt_bld txt_l"><span class="txt_l">ドーシャ(体質)診断の結果は…</span></p>
+
+  <p id="resulttxt">タイプ</p>
+
+  <ul>
+  <li><p id="result_g">0</p></li>
+  <li><p id="result_r">0</p></li>
+  <li><p id="result_b">0</p></li>
+  </ul>
+
+</div>
 </div>
 
 </div>

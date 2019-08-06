@@ -206,8 +206,8 @@ $$("#typecheck").click(function(){
 
 //    $("#resulttxt").text(wktyperes + "-ドーシャタイプ");
 //    $("#resulttxt").text(wkresult + "タイプ");
-  $$("#resulttxt").html(wkresult + "タイプ");
-  $$("#result_g").text(wktype[0]);
+//  $$("#resulttxt").html(wkresult + "タイプ");
+  $$("#result_g").text('99');
   $$("#result_r").text(wktype[1]);
   $$("#result_b").text(wktype[2]);
   // alert(wktype); 
