@@ -94,7 +94,7 @@ $$('#my-login-screen .login-button').on('click', function () {
 });
 
 // $$(window).load(function (){
-$$("#typecheck").click(function(){
+$$("#typecheck").on('click', function(){
   var wktype = [0,0,0];
   var wktypename = ["ヴァータ","ピッタ","カパ"];
   var wkresult = "";
@@ -103,6 +103,7 @@ $$("#typecheck").click(function(){
   var wkmax = 0;
   var i = 0;
 //  alert(wktypename);
+app.dialog.alert('Hello');
 
   for(i=0;i<30;i++ ){
       if(document.forms[0].elements[i].checked === true){
@@ -202,8 +203,8 @@ $$("#typecheck").click(function(){
   // alert(wkresult);
 
   //診断結果を表示
- 
-  alert("あなたのドーシャ(体質)は"+wkresult+"です。\n"+"ヴァータ(風)："+wktype[0]+"、ピッタ(火)："+wktype[1]+"、カパ(水)："+wktype[2]);
+  app.dialog.alert('Hello2'); 
+  app.dialog.alert("あなたのドーシャ(体質)は"+wkresult+"です。\n"+"ヴァータ(風)："+wktype[0]+"、ピッタ(火)："+wktype[1]+"、カパ(水)："+wktype[2]);
   // alert("ヴァータ："+wktype[0]+"、ピッタ："+wktype[1]+"、カパ："+wktype[2]);      
   // $$("#imi_result"). animate( { height: 'show' }, 'slow' );  
 
@@ -229,13 +230,35 @@ $$("#typecheck").click(function(){
 //    $("#resulttxt").text(wktyperes + "-ドーシャタイプ");
 //    $("#resulttxt").text(wkresult + "タイプ");
 //  $$("#resulttxt").html(wkresult + "タイプ");
-  $("#result_g").text(wktype[0]);
-  $("#result_r").text(wktype[1]);
-  $("#result_b").text(wktype[2]);
+//  $("#result_g").text(wktype[0]);
+//  $("#result_r").text(wktype[1]);
+//  $("#result_b").text(wktype[2]);
 
    document.getElementById('result_g').textContent = "99";
   // alert(wktype); 
   // alert(wkresult); 
-  return false; 
+
+  // return false; 
   });
+
+// Alert
+$$('.open-alert').on('click', function () {
+  app.dialog.alert('Hello');
+});
+
+// Confirm
+$$('.open-confirm').on('click', function () {
+  app.dialog.confirm('Are you feel good today?', function () {
+    app.dialog.alert('Great!');
+  });
+});
+
+// Prompt
+$$('.open-prompt').on('click', function () {
+  app.dialog.prompt('What is your name?', function (name) {
+    app.dialog.confirm('Are you sure that your name is ' + name + '?', function () {
+      app.dialog.alert('Ok, your name is ' + name);
+    });
+  });
+});
  // });
