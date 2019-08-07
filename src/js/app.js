@@ -204,7 +204,7 @@ app.dialog.alert('Hello');
 
   //診断結果を表示
   app.dialog.alert('Hello2'); 
-  app.dialog.alert("あなたのドーシャ(体質)は"+wkresult+"です。\n"+"ヴァータ(風)："+wktype[0]+"、ピッタ(火)："+wktype[1]+"、カパ(水)："+wktype[2]);
+  alert("あなたのドーシャ(体質)は"+wkresult+"です。\n"+"ヴァータ(風)："+wktype[0]+"、ピッタ(火)："+wktype[1]+"、カパ(水)："+wktype[2]);
   // alert("ヴァータ："+wktype[0]+"、ピッタ："+wktype[1]+"、カパ："+wktype[2]);      
   // $$("#imi_result"). animate( { height: 'show' }, 'slow' );  
 
